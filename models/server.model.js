@@ -76,11 +76,6 @@ class Server {
 
     routes() {
 
-        // Manejar rutas Gestion
-        this.app.get('*', (req, res) => {
-            res.sendFile(path.resolve(__dirname, 'public/index.html'));
-        });
-
         this.app.use(this.paths.auth, require('../routes/auth.routes'));
         this.app.use(this.paths.autores, require('../routes/autores.routes'));
         this.app.use(this.paths.buscar, require('../routes/buscar.routes'));
@@ -97,6 +92,11 @@ class Server {
         this.app.use(this.paths.provincias, require('../routes/provincia.routes'));
         this.app.use(this.paths.uploads, require('../routes/uploads.routes'));
         this.app.use(this.paths.usuarios, require('../routes/usuarios.routes'));
+
+        // Manejar rutas Gestion
+        this.app.get('*', (req, res) => {
+            res.sendFile(path.resolve(__dirname, 'public/index.html'));
+        });
 
     }
 

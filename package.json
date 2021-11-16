@@ -1,0 +1,28 @@
+{
+    "name": "thebookshop-backend",
+    "version": "1.0.0",
+    "description": "Book Shop",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index"
+    },
+    "author": "Ignacio Bockl",
+    "license": "ISC",
+    "dependencies": {
+        "bcryptjs": "^2.4.3",
+        "cloudinary": "^1.27.0",
+        "cors": "^2.8.5",
+        "dotenv": "^10.0.0",
+        "express": "^4.17.1",
+        "express-fileupload": "^1.2.1",
+        "express-validator": "^6.12.2",
+        "google-auth-library": "^7.10.0",
+        "jsonwebtoken": "^8.5.1",
+        "mercadopago": "^1.5.8",
+        "mongoose": "^6.0.8",
+        "nodemailer": "^6.7.0",
+        "nodemon": "^2.0.14",
+        "uuid": "^8.3.2",
+        "xoauth2": "^1.2.0"
+    }
+}
